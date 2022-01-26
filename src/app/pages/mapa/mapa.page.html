@@ -1,15 +1,15 @@
 <app-menu></app-menu>
 
-<ion-content class="map" #padreMapa>
-    
-    
-        <div id="map" #hijoMapa></div>
-    
+<ion-content color="primarioApp">
 
-    <ion-tab-button class="fixed-bottom btn-infoModal" (click)="presentModal()">
+    <div id="map"></div>
+
+    <ion-tab-button class="fixed-bottom btn-infoModal animate__animated animate__bounce" (click)="presentModal()">
         <i class="fas fa-car fa-3x"></i>
     </ion-tab-button>
-    
-    <ion-button class="fixed-bottom m-0 p-0" expand="full" color="success" size="large" (click)="addMyClass()" >Ya llegue</ion-button>
- 
-</ion-content>
+
+    <ion-button class="fixed-bottom m-0 p-0 animate__animated animate__pulse animate__fast" expand="full" color="success" size="large" (click)="addMyClass()"> 
+        <p id="TextYaLlegue" class="animate__animated animate__bounceIn animate__fast">Ya llegue</p> 
+    </ion-button>
+
+</ion-content> 

@@ -10,15 +10,14 @@ import { MapboxService } from '../../services/mapbox.service';
 })
 export class MapaPage implements OnInit {
 
-  constructor(private routerOutlet: IonRouterOutlet, private modalController: ModalController, private servicioMapBox: MapboxService, private renderer: Renderer2) {
-
-
+  constructor(private routerOutlet: IonRouterOutlet, private modalController: ModalController, 
+              private servicioMapBox: MapboxService, private renderer: Renderer2){
   }
 
   ngOnInit() {
-
     this.cargarMapa()
   }
+
 
   cargarMapa() {
 
@@ -36,8 +35,8 @@ export class MapaPage implements OnInit {
 
     const modal = await this.modalController.create({
       component: InfoVehiculoPage,
-      initialBreakpoint: 0.5,
-      breakpoints: [0.0, 0.5, 1],
+      initialBreakpoint: 0.8,
+      breakpoints: [0.0, 0.8, 1],
       showBackdrop: true
 
 

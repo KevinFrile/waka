@@ -19,6 +19,7 @@ export class MapaPage implements OnInit {
   }
 
 
+  
   cargarMapa() {
 
     this.servicioMapBox.cargarMapa()

@@ -18,8 +18,6 @@ export class MapaPage implements OnInit {
     this.cargarMapa()
   }
 
-
-  
   cargarMapa() {
 
     this.servicioMapBox.cargarMapa()
